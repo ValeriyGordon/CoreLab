@@ -174,21 +174,24 @@
 
   /* map */
 
+.location {
+  margin-bottom: 80px;
+}
+
 .location__container {
   position: relative;
 }
 
   .location__inner {
-    position: absolute;
-    top: 64px;
-    right: 17%;
-    padding: 15px;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 25px;
     color: #ffffff;
-    background-color: #444444a1;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #9d9d9d;
     border-radius: 10px;
   }
 
@@ -204,4 +207,127 @@
 
 /* footer */
 
+.footer {
+  min-height: 100px;
+  background-color: #0d0080;
+}
 
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 700px;
+  padding-top: 20px;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 150px;
+}
+
+.footer__social-item {
+  cursor: pointer;
+}
+
+.footer__social-telegram:hover {
+  fill: #2a13fc;
+}
+
+.footer__social-instagram:hover {
+  fill: #c700b0;
+}
+
+.footer__list-phone {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 450px;
+}
+
+.footer__item-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.footer__item-link:hover {
+  color: #c4c4c4;
+}
+
+.footer__item-link:active {
+  color: #9e9d9d;
+}
+
+@media (max-width: 1025px) {
+  .about__list {
+    justify-content: center;
+    padding-left: 11px;
+  }
+}
+
+@media (max-width: 932px) {
+  .about__list {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 260px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .header__logo {
+    margin-right: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .header__nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13px;
+  }
+
+  .header__item {
+    display: block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .header__item-link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffff;
+  }
+
+  .about__list {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 208px;
+  }
+
+  .about__list-item:not(:nth-child(even)) {
+    margin: 0 102px 45px 0;
+  }
+
+  .footer__container {
+   flex-direction: column;
+  }
+
+  .footer__social-list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 150px;
+    margin: 0 auto 30px;
+  }
+
+  .footer__list-phone {
+    margin-bottom: 20px;
+  }
+}
