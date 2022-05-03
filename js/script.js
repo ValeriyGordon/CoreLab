@@ -23,9 +23,9 @@ function init(){
 
     var myPlacemark = new ymaps.Placemark([50.55533757296666,137.0178744999999], {}, {
       iconLayout: 'default#image',
-      iconImageHref: 'img/linux-point.png',
-      iconImageSize: [48, 48],
-      iconImageOffset: [-28, -42]
+      iconImageHref: 'img/point.png',
+      iconImageSize: [88, 80],
+      iconImageOffset: [-35, -82]
     });
 
     // Размещение геообъекта на карте.
