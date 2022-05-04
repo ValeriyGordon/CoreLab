@@ -14,6 +14,13 @@ font-weight: 400;
 font-style: normal;
 }
 
+@font-face {
+  font-family: "vipnagorgialla-bd";
+  src: url("../fonts/vipnagorgialla-bd.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
 max-width: 2560px;
 }
@@ -125,7 +132,19 @@ color: #9e9d9d;
 /* about */
 
 .about {
-margin-bottom: 110px;
+  margin-bottom: 110px;
+}
+
+.main__title {
+  font-family: "vipnagorgialla-bd", Arial, sans-serif ;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  color: #ffffff;
+  background-color: #ff4545;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .about__list {
@@ -172,7 +191,7 @@ max-width: 250px;
 
 .about__list-item:not(:nth-child(even)) {
 text-align: center;
-margin: 0 250px 0 0;
+margin: 0 0 0 0;
 margin-bottom: 45px;
 }
 
@@ -328,6 +347,13 @@ color: #9e9d9d;
   margin-right: 0;
 }
 
+.main__title {
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
 .about__list {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -361,6 +387,14 @@ color: #9e9d9d;
 }
 
 @media (max-width: 768px) {
+
+.main__title {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
 .about__list-item {
   height: 220px;
 }
@@ -377,6 +411,10 @@ color: #9e9d9d;
   padding: 0 15px;
 }
 
+.header {
+  margin-bottom: 50px;
+}
+
 .header__list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -390,6 +428,13 @@ color: #9e9d9d;
 .header__item {
   margin-right: 0;
   margin-bottom: 20px;
+}
+
+.main__title {
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .about__list-item {
