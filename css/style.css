@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Bold.woff);
@@ -74,7 +81,7 @@ padding: 0 14px;
 .header {
 min-height: 80px;
 background-color: #0d0080;
-margin-bottom: 80px;
+margin-bottom: 60px;
 }
 
 .header__nav {
@@ -144,7 +151,7 @@ color: #9e9d9d;
   color: #ffffff;
   background-color: #ff4545;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .about__list {
@@ -220,6 +227,24 @@ text-align: center;
 padding: 50px 0 50px 0;
 border-top: 2px solid rgb(232, 232, 232);
 border-bottom: 2px solid rgb(232, 232, 232);
+}
+
+.about__drweb-inner {
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 30px;
+}
+
+.about__drweb-logo {
+  width: 271px;
+  margin-right: auto;
 }
 
 .about__drweb-img {
@@ -318,6 +343,26 @@ color: #9e9d9d;
   right: 140px;
 }
 
+.footer__easter-egg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.footer__easter-egg-title,
+.footer__easter-egg-link {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #5547ce;
+}
+
 @media (max-width: 1024px) {
 
 .container {
@@ -381,18 +426,43 @@ color: #9e9d9d;
   line-height: 25px;
 }
 
+.about__drweb-inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto 30px;
+}
+
+.about__drweb-logo {
+  width: 271px;
+  margin: 0 auto 30px;
+  /* margin-right: auto; */
+}
+
 .footer__container {
   margin: 0 auto;
 }
+
+.footer__easter-egg-title,
+.footer__easter-egg-link {
+  font-size: 8px;
+  line-height: 12px;
+}
+
 }
 
 @media (max-width: 768px) {
+
+.header {
+  margin-bottom: 50px;
+}
 
 .main__title {
   font-size: 18px;
   line-height: 27px;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .about__list-item {
@@ -412,7 +482,7 @@ color: #9e9d9d;
 }
 
 .header {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .header__list {
@@ -434,7 +504,7 @@ color: #9e9d9d;
   font-size: 10px;
   line-height: 15px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .about__list-item {
@@ -467,5 +537,11 @@ color: #9e9d9d;
 
 .footer__item {
   margin-bottom: 30px;
+}
+
+.footer__easter-egg-title,
+.footer__easter-egg-link {
+  font-size: 5px;
+  line-height: 7px;
 }
 }
