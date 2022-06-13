@@ -89,7 +89,7 @@ padding: 0 14px;
 .header {
 min-height: 80px;
 background-color: var(--color-header-bg);
-margin-bottom: 40px;
+margin-bottom: 80px;
 }
 
 .header__nav {
@@ -378,7 +378,7 @@ color: var(--color-link-active);
 }
 
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .header__nav {
@@ -466,7 +466,7 @@ color: var(--color-link-active);
 @media (max-width: 768px) {
 
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .main__title {
@@ -504,7 +504,7 @@ color: var(--color-link-active);
 }
 
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .header__list {
